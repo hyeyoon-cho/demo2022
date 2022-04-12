@@ -1,0 +1,23 @@
+crz:
+  charset: 'utf-8'
+  credential: ''
+engine:
+  filter:
+    addr: 127.0.0.1:7574
+  search:
+    addr: 127.0.0.1:7577
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      globally_quoted_identifiers: true
+  redis:
+    host: '127.0.0.1'
+    port: 6379
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.10.20.229:3306/kwc_dev?characterEncoding=UTF-8
+    username: root
+    password: konan415!
+
