@@ -14,8 +14,6 @@ public class SearchUtil {
 	@Value("${crz.charset}")
 	String ksCharset;
 	
-	
-	
 	public String getSearchURL(String addr, String fields, String volume, String table, String where, String order,
 			int offset, int pagelength, String synDomainNumber) throws UnsupportedEncodingException {
 		String url = "";

@@ -21,3 +21,10 @@ spring:
     username: root
     password: konan415!
 
+
+ocr:
+  addr: 127.0.0.1:62975
+  sdk_url: /sdk/ocr
+  api_key: SNOCR-40afba5e91fd49b88224e9b76229c8af
+  
+  
