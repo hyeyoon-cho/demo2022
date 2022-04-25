@@ -156,7 +156,6 @@ public class RestUtil {
 	}
 
 	private String request(String charset, boolean useSocketTimeout, int timeout, ExecuteRequest execute) {
-
 		Builder builder = RequestConfig.custom().setConnectTimeout(timeout).setConnectionRequestTimeout(timeout);
 		if (useSocketTimeout) {
 			builder.setSocketTimeout(timeout);
