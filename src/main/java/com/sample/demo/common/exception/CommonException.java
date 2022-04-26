@@ -1,11 +1,19 @@
 package com.sample.demo.common.exception;
 
+import org.springframework.http.HttpStatus;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class CommonException extends RuntimeException {
 	
 	private static final long serialVersionUID = 1L;
 	private int statusCode = -1;
 	private String code;
 	private ErrorCode errorCode;
+	private HttpStatus status = HttpStatus.BAD_REQUEST;
 	
 	public CommonException() {
 	}
@@ -45,21 +53,4 @@ public class CommonException extends RuntimeException {
 		this.statusCode = statusCode;
 	}
 	
-	/**
-	 * @return the errorCode
-	 */
-	public ErrorCode getErrorCode() {
-		return errorCode;
-	}
-	
-	/**
-	 * @return the code
-	 */
-	public String getCode() {
-		return code;
-	}
-
-	public int getStatusCode() {
-		return this.statusCode;
-	}
 }

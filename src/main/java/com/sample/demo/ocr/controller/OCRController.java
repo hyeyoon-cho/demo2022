@@ -1,5 +1,9 @@
 package com.sample.demo.ocr.controller;
 
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,8 +21,11 @@ public class OCRController {
 	@PostMapping("/ocrTest")
 	@ResponseBody
 	public String fileOCRTest() {
-		service.oneFileProcess("/home/konan/test.pdf");
-		return "";
+		
+		List<File> files = service.imageFileList("/home/konan/image2");
+		service.dirProcess(files);
+		
+		return "OK";
 		
 	}
 }

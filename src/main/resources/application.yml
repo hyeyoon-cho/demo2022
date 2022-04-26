@@ -15,12 +15,6 @@ spring:
   redis:
     host: '127.0.0.1'
     port: 6379
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://10.10.20.229:3306/kwc_dev?characterEncoding=UTF-8
-    username: root
-    password: konan415!
-
 
 ocr:
   addr: 127.0.0.1:62975
