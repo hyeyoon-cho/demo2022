@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
 import com.sample.demo.common.utils.JUnitTestUtils;
 
 
-class JUtilsTest {
+class JUnitTest {
 	JUnitTestUtils utils;
 	static JUnitTestUtils utils2;
 	
