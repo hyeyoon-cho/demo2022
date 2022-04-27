@@ -9,10 +9,6 @@ class Demo2022ApplicationTests {
 
 	@Test
 	void contextLoads() {
-		JSONObject obj = new JSONObject();
-		obj.put("1", "!");
-		
-		System.out.println(obj.toJSONString());
 	}
 
 }

@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import com.sample.demo.common.utils.RestUtil;
 import com.sample.demo.ocr.service.OCRLocalService;
@@ -30,7 +31,6 @@ public class OCRLocalServiceImpl implements OCRLocalService {
 	String ocrAddr;
 	@Value("${ocr.sdk_url}")
 	String sdk_url;
-	
 	@Value("${ocr.api_key}")
 	String ocrApiKey;
 	
@@ -54,7 +54,6 @@ public class OCRLocalServiceImpl implements OCRLocalService {
 	
 	public String oneFileProcess(String localPath) {
 		String result = restUtil.requestPostMultipart("http://"+ocrAddr+sdk_url, getPayload("local", localPath));
-//		System.out.println(result);
 		return result;
 	}
 	

@@ -35,8 +35,6 @@ class OCRLocalServiceImplTest {
 				, new File(prefix + "012263e765e12e057a5e6c91933bf5f6_599.gif")
 				, new File(prefix + "012263e765e12e057a5e6c91933bf5f6_602.gif")
 				);
-		
-		
 		return list;
 	}
 
